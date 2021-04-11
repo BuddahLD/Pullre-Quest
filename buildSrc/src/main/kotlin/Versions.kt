@@ -4,7 +4,7 @@
 // TODO: 11.04.2021 add a doc
 object Versions {
     //app level
-    const val gradle = "4.0.1"
+    const val gradle = "7.0.0-alpha14"
     const val kotlin = "1.4.0"
 
     //libs
