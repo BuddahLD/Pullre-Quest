@@ -1,4 +1,4 @@
-package com.gmaili.danylooliinyk.android.pullrequest
+package com.gmail.danylooliinyk.android.pullrequest
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

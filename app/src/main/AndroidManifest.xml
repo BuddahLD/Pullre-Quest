@@ -10,7 +10,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.PullreQuest" >
         <activity
-            android:name="com.gmaili.danylooliinyk.android.pullrequest.MainActivity">
+            android:name="com.gmail.danylooliinyk.android.pullrequest.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
