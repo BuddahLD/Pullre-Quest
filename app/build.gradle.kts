@@ -1,19 +1,23 @@
 plugins {
+    id("com.android.application")
+    kotlin("android")
+    kotlin("android.extensions")
 }
 
 android {
-    compileSdk = 30
+    compileSdkVersion(AppConfig.compileSdk)
+    buildToolsVersion(AppConfig.buildToolsVersion)
 
     defaultConfig {
         applicationId = "com.gmail.danylooliinyk.android.pullrequest"
-        minSdk = 21
-        targetSdk = 30
-        versionCode = 1
-        versionName = "1.0"
+        minSdkVersion(AppConfig.minSdk)
+        targetSdkVersion(AppConfig.targetSdk)
+        versionCode = AppConfig.versionCode
+        versionName = AppConfig.versionName
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -21,8 +25,18 @@ android {
             )
         }
     }
+
+    viewBinding {
+        android.buildFeatures.viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-
+    //app libs
+    implementation(AppDependencies.appLibraries)
 }
