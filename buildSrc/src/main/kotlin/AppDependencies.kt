@@ -13,6 +13,7 @@ object AppDependencies {
     private val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     private val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     private val material = "com.google.android.material:material:${Versions.material}"
+    private val navigation = "androidx.navigation:navigation-compose:${Versions.navigation}"
 
     // compose
     private val composeUi = "androidx.compose.ui:ui:${Versions.compose}"
@@ -38,6 +39,7 @@ object AppDependencies {
         add(appcompat)
         add(constraintLayout)
         add(material)
+        add(navigation)
     }
 
     val composeLibs = arrayListOf<String>().apply {

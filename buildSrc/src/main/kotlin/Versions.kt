@@ -18,6 +18,9 @@ object Versions {
     val composeActivity = "1.3.0-alpha03"
     val composeLifecycleViewmodel = "1.0.0-alpha02"
 
+    // navigation
+    val navigation = "1.0.0-alpha10"
+
     // test
     val junit = "4.12"
     val extJunit = "1.1.1"

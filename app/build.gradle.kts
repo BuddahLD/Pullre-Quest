@@ -50,6 +50,8 @@ android {
         exclude("META-INF/AL2.0")
         exclude("META-INF/LGPL2.1")
     }
+
+    kotlinOptions.useIR = true
 }
 
 android.sourceSets.all {
